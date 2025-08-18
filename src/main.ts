@@ -6,8 +6,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-    .setTitle('NestJS Template')
-    .setDescription('The NestJS API Template')
+    .setTitle('NestJS + Prisma API Template')
+    .setDescription('NestJS + Prisma API Template')
     .setVersion('1.0')
     .build();
   const documentFactory = () => SwaggerModule.createDocument(app, config);
